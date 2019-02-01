@@ -1,0 +1,36 @@
+
+entity Professor{
+	nome String
+}
+entity Curso{
+	nome String
+}
+
+entity Disciplina{
+	nome String
+	turno Turno
+}
+
+entity Sala{
+	numero String
+}
+entity Predio{
+	numero String
+}
+enum Turno{
+	MANHA,
+	NOITE
+}
+
+relationship ManyToOne {
+	Sala to Predio
+}
+relationship ManyToOne {
+	Disciplina to Sala
+}
+relationship ManyToMany {
+	Professor to Curso
+}
+relationship ManyToMany {
+	Curso to Disciplina
+}
