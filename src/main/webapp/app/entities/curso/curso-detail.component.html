@@ -1,0 +1,33 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="curso">
+            <h2><span jhiTranslate="projetofinaljdltesteApp.curso.detail.title">Curso</span> {{curso.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="projetofinaljdltesteApp.curso.nome">Nome</span></dt>
+                <dd>
+                    <span>{{curso.nome}}</span>
+                </dd>
+                <dt><span jhiTranslate="projetofinaljdltesteApp.curso.disciplina">Disciplina</span></dt>
+                <dd>
+                    <span *ngFor="let disciplina of curso.disciplinas; let last = last">
+                        <a [routerLink]="['/disciplina', disciplina?.id, 'view' ]">{{disciplina.id}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/curso', curso.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

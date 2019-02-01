@@ -38,6 +38,17 @@ public class CacheConfiguration {
             cm.createCache(br.jdl.projetofinal.teste.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(br.jdl.projetofinal.teste.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(br.jdl.projetofinal.teste.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Professor.class.getName(), jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Professor.class.getName() + ".cursos", jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Curso.class.getName(), jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Curso.class.getName() + ".disciplinas", jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Curso.class.getName() + ".professors", jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Disciplina.class.getName(), jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Disciplina.class.getName() + ".cursos", jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Sala.class.getName(), jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Sala.class.getName() + ".disciplinas", jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Predio.class.getName(), jcacheConfiguration);
+            cm.createCache(br.jdl.projetofinal.teste.domain.Predio.class.getName() + ".salas", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,33 @@
+{
+    "name": "Sala",
+    "fields": [
+        {
+            "fieldName": "numero",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "predio",
+            "otherEntityName": "predio",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "sala"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "disciplina",
+            "otherEntityName": "disciplina",
+            "otherEntityRelationshipName": "sala"
+        }
+    ],
+    "changelogDate": "20190201124122",
+    "entityTableName": "sala",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,24 @@
+{
+    "projetofinaljdltesteApp": {
+        "curso": {
+            "home": {
+                "title": "Cursos",
+                "createLabel": "Create a new Curso",
+                "createOrEditLabel": "Create or edit a Curso",
+                "search": "Search for Curso"
+            },
+            "created": "A new Curso is created with identifier {{ param }}",
+            "updated": "A Curso is updated with identifier {{ param }}",
+            "deleted": "A Curso is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Curso {{ id }}?"
+            },
+            "detail": {
+                "title": "Curso"
+            },
+            "nome": "Nome",
+            "disciplina": "Disciplina",
+            "professor": "Professor"
+        }
+    }
+}

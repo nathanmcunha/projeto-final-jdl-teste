@@ -1,0 +1,24 @@
+{
+    "projetofinaljdltesteApp": {
+        "curso": {
+            "home": {
+                "title": "Cursos",
+                "createLabel": "Criar novo Curso",
+                "createOrEditLabel": "Criar ou editar Curso",
+                "search": "Pesquisar por Curso"
+            },
+            "created": "Um novo Curso foi criado com o identificador {{ param }}",
+            "updated": "Um Curso foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Curso foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Curso {{ id }}?"
+            },
+            "detail": {
+                "title": "Curso"
+            },
+            "nome": "Nome",
+            "disciplina": "Disciplina",
+            "professor": "Professor"
+        }
+    }
+}

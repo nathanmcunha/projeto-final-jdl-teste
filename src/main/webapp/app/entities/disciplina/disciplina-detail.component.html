@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="disciplina">
+            <h2><span jhiTranslate="projetofinaljdltesteApp.disciplina.detail.title">Disciplina</span> {{disciplina.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="projetofinaljdltesteApp.disciplina.nome">Nome</span></dt>
+                <dd>
+                    <span>{{disciplina.nome}}</span>
+                </dd>
+                <dt><span jhiTranslate="projetofinaljdltesteApp.disciplina.turno">Turno</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'projetofinaljdltesteApp.Turno.' + disciplina.turno}}">{{disciplina.turno}}</span>
+                </dd>
+                <dt><span jhiTranslate="projetofinaljdltesteApp.disciplina.sala">Sala</span></dt>
+                <dd>
+                    <div *ngIf="disciplina.sala">
+                        <a [routerLink]="['/sala', disciplina.sala?.id, 'view']">{{disciplina.sala?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/disciplina', disciplina.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

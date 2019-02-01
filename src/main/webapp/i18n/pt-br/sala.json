@@ -1,0 +1,24 @@
+{
+    "projetofinaljdltesteApp": {
+        "sala": {
+            "home": {
+                "title": "Salas",
+                "createLabel": "Criar novo Sala",
+                "createOrEditLabel": "Criar ou editar Sala",
+                "search": "Pesquisar por Sala"
+            },
+            "created": "Um novo Sala foi criado com o identificador {{ param }}",
+            "updated": "Um Sala foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Sala foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Sala {{ id }}?"
+            },
+            "detail": {
+                "title": "Sala"
+            },
+            "numero": "Numero",
+            "predio": "Predio",
+            "disciplina": "Disciplina"
+        }
+    }
+}
