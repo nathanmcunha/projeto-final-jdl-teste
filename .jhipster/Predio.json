@@ -1,0 +1,26 @@
+{
+    "name": "Predio",
+    "fields": [
+        {
+            "fieldName": "numero",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "sala",
+            "otherEntityName": "sala",
+            "otherEntityRelationshipName": "predio"
+        }
+    ],
+    "changelogDate": "20190201124123",
+    "entityTableName": "predio",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

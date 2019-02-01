@@ -1,0 +1,23 @@
+{
+    "projetofinaljdltesteApp": {
+        "predio": {
+            "home": {
+                "title": "Predios",
+                "createLabel": "Criar novo Predio",
+                "createOrEditLabel": "Criar ou editar Predio",
+                "search": "Pesquisar por Predio"
+            },
+            "created": "Um novo Predio foi criado com o identificador {{ param }}",
+            "updated": "Um Predio foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Predio foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Predio {{ id }}?"
+            },
+            "detail": {
+                "title": "Predio"
+            },
+            "numero": "Numero",
+            "sala": "Sala"
+        }
+    }
+}

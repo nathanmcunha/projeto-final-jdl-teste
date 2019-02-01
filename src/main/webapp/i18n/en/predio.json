@@ -1,0 +1,23 @@
+{
+    "projetofinaljdltesteApp": {
+        "predio": {
+            "home": {
+                "title": "Predios",
+                "createLabel": "Create a new Predio",
+                "createOrEditLabel": "Create or edit a Predio",
+                "search": "Search for Predio"
+            },
+            "created": "A new Predio is created with identifier {{ param }}",
+            "updated": "A Predio is updated with identifier {{ param }}",
+            "deleted": "A Predio is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Predio {{ id }}?"
+            },
+            "detail": {
+                "title": "Predio"
+            },
+            "numero": "Numero",
+            "sala": "Sala"
+        }
+    }
+}

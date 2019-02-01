@@ -1,0 +1,39 @@
+{
+    "name": "Disciplina",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "turno",
+            "fieldType": "Turno",
+            "fieldValues": "MANHA,NOITE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "sala",
+            "otherEntityName": "sala",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "disciplina"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "curso",
+            "otherEntityName": "curso",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "disciplina"
+        }
+    ],
+    "changelogDate": "20190201124121",
+    "entityTableName": "disciplina",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

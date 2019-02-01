@@ -1,0 +1,33 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="professor">
+            <h2><span jhiTranslate="projetofinaljdltesteApp.professor.detail.title">Professor</span> {{professor.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="projetofinaljdltesteApp.professor.nome">Nome</span></dt>
+                <dd>
+                    <span>{{professor.nome}}</span>
+                </dd>
+                <dt><span jhiTranslate="projetofinaljdltesteApp.professor.curso">Curso</span></dt>
+                <dd>
+                    <span *ngFor="let curso of professor.cursos; let last = last">
+                        <a [routerLink]="['/curso', curso?.id, 'view' ]">{{curso.id}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/professor', professor.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

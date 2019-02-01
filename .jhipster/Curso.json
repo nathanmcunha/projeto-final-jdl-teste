@@ -1,0 +1,35 @@
+{
+    "name": "Curso",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "curso",
+            "relationshipName": "disciplina",
+            "otherEntityName": "disciplina",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "professor",
+            "otherEntityName": "professor",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "curso"
+        }
+    ],
+    "changelogDate": "20190201124120",
+    "entityTableName": "curso",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

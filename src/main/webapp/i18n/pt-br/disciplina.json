@@ -1,0 +1,25 @@
+{
+    "projetofinaljdltesteApp": {
+        "disciplina": {
+            "home": {
+                "title": "Disciplinas",
+                "createLabel": "Criar novo Disciplina",
+                "createOrEditLabel": "Criar ou editar Disciplina",
+                "search": "Pesquisar por Disciplina"
+            },
+            "created": "Um novo Disciplina foi criado com o identificador {{ param }}",
+            "updated": "Um Disciplina foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Disciplina foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Disciplina {{ id }}?"
+            },
+            "detail": {
+                "title": "Disciplina"
+            },
+            "nome": "Nome",
+            "turno": "Turno",
+            "sala": "Sala",
+            "curso": "Curso"
+        }
+    }
+}
